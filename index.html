@@ -38,7 +38,7 @@
 <body class="oBusiness" id="body_area" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
     <div id="app">
         <!-- Header Navbar -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container header__navbar">
                 <div class="header__logo">
                     <a href="#" class="header__logo-link">
@@ -118,10 +118,12 @@
 
         
 	<main id="content" class="main-content">
+		
 		<section class="section-block section-home-head home-hero">
+			
 			<div class="container">
 				<div class="row content-side-img">
-					<div class="col-lg-6 col-md-12">
+					<div class="col-lg-6 col-md-12 home-hero__left">
 						<div class="home-head">
 							<h1 class="title-font">
 								Best Way to Connect with Customers
@@ -146,7 +148,7 @@
 									<div class="col-md-4 col-6">
 										<div class="counter-item">
 											<div class="counter-item__counter">
-												<span>123.00</span>
+												<span class="number-count-up" data-target="199.11">0</span>
 												<p>Total install</p>
 											</div>
 											<span class="counter-item__icon">
@@ -157,8 +159,8 @@
 									<div class="col-md-4 col-6">
 										<div class="counter-item">
 											<div class="counter-item__counter">
-												<span>123.00</span>
-												<p>Total install</p>
+												<span class="number-count-up" data-target="199.11">0</span>
+												<p>Total Download</p>
 											</div>
 											<span class="counter-item__icon">
 												<i class="fas fa-arrow-up icon-sm"></i>
@@ -168,8 +170,8 @@
 									<div class="col-md-4 col-6">
 										<div class="counter-item">
 											<div class="counter-item__counter">
-												<span>123.00</span>
-												<p>Total install</p>
+												<span class="number-count-up" data-target="199.11">0</span>
+												<p>Active Users</p>
 											</div>
 											<span class="counter-item__icon">
 												<i class="fas fa-arrow-up icon-sm"></i>
@@ -180,13 +182,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-6 col-12">
+					<div class="col-lg-5 col-md-6 col-12 home-hero__right">
 						<div class="home-hero__img">
 							<img src="images/content-img/app-mobile-image.png" alt="app vne" />
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="hero-bg-bottom"
+				style="background: url('./images/background/hero-bg-bottom.svg')no-repeat bottom center;"></div>
 		</section>
 
 		<!-- Card - info -->
@@ -292,19 +296,19 @@
 							<div class="row">
 								<div class="col-md-4 col-4 line-right">
 									<div class="counter-info">
-										<h4 class="counter-info__number">5433</h4>
+										<h4 class="counter-info__number number-count-up" data-target="5432">0</h4>
 										<p class="counter-info__text">Customers</p>
 									</div>
 								</div>
 								<div class="col-md-4 col-4 line-right">
 									<div class="counter-info">
-										<h4 class="counter-info__number">5433</h4>
+										<h4 class="counter-info__number number-count-up" data-target="5432">0</h4>
 										<p class="counter-info__text">Customers</p>
 									</div>
 								</div>
 								<div class="col-md-4 col-4">
 									<div class="counter-info">
-										<h4 class="counter-info__number">5433</h4>
+										<h4 class="counter-info__number number-count-up" data-target="5432">0</h4>
 										<p class="counter-info__text">Customers</p>
 									</div>
 								</div>
@@ -622,28 +626,28 @@
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="fas fa-users"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Customers</h5>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="fas fa-cloud-download-alt"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Download</h5>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="far fa-smile"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Satisfied</h5>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="fas fa-coffee"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Cup Of Coffee</h5>
 							</div>
 						</div>
@@ -686,7 +690,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-12">
-						<div class="card-pricing card-y">
+						<div class="card-pricing card-pricing--active">
 							<div class="card-pricing__img">
 								<img src="./images/content-img/pricing-img-1.png" alt="vne pricing standard">
 							</div>
@@ -1188,25 +1192,25 @@
 	</main>
 	
 
-        <footer class="footer"> 
-            <div class="container"> 
-                    <div class="row section-contact">
-                        <div class="col-lg-7 col-md-6 col-12">
-                            <div class="heading-title-white">
-                                <h1 class="title-font">Subscribe our Newsletter</h1>
-                                <p>
-                                    We’re a team of non-cynics who truly care for our work.
-                                </p>
-                            </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row section-contact">
+                    <div class="col-lg-7 col-md-6 col-12">
+                        <div class="heading-title-white">
+                            <h1 class="title-font">Subscribe our Newsletter</h1>
+                            <p>
+                                We’re a team of non-cynics who truly care for our work.
+                            </p>
                         </div>
-                        <div class="col-lg-5 col-md-6 col-12">
-                            <form class="contact-form">
-                                <input type="text" class="input-contact form-control" placeholder="Enter your email"
-                                    name="email" required="" autocomplete="off">
-                                <button type="submit" class="disabled"><i class="fas fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div> 
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <form class="contact-form">
+                            <input type="text" class="input-contact form-control" placeholder="Enter your email"
+                                name="email" required="" autocomplete="off">
+                            <button type="submit" class="disabled"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -1261,7 +1265,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-12">
-                       <div class="row">
+                        <div class="row">
                             <div class="col-md-3 col-12">
                                 <div class="footer-link">
                                     <h5 class="footer-link__title">
@@ -1318,20 +1322,20 @@
                                     </ul>
                                 </div>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
         <div class="footer-bottom">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6 col-12">
+                <div class="row footer-bottom__content">
+                    <div class="col-lg-6 col-md-6 col-12">
                         <p class="footer-bottom__info">
                             <a href="#" class="footer-bottom__brandname">Vnexpress</a> © 2021. All Rights Reserved.
                         </p>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-6 col-12">
                         <ul class="footer-bottom__list">
                             <li><a href="#" class="footer-bottom__link">Terms</a> </li>
                             <li><a href="#" class="footer-bottom__link">Security</a> </li>
