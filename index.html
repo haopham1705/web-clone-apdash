@@ -120,7 +120,6 @@
 	<main id="content" class="main-content">
 
 		<section class="section-block section-home-head home-hero">
-
 			<div class="container">
 				<div class="row content-side-img">
 					<div class="col-lg-6 col-md-12 home-hero__left">
@@ -189,6 +188,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Bottom background -->
 			<div class="hero-bg-bottom"
 				style="background: url('./images/background/hero-bg-bottom.svg')no-repeat bottom center;"></div>
 		</section>
@@ -380,7 +380,7 @@
 						awareness, drive traffic, connect. Efficiently transform granular value with client-focused
 						content. Energistically redefine market.</p>
 					<div class="content-bg__download">
-						<a href="#" class="btn-c btn-c-download">
+						<a href="#" class="btn-c btn-c__download">
 							<i class="fab fa-windows"></i>
 							<div class="btn-download__text">
 								<small>Download from</small>
@@ -388,7 +388,7 @@
 							</div>
 						</a>
 
-						<a href="#" class="btn-c btn-c-download">
+						<a href="#" class="btn-c btn-c__download">
 							<i class="fab fa-apple"></i>
 							<div class="btn-download__text">
 								<small>Download from</small>
@@ -396,7 +396,7 @@
 							</div>
 						</a>
 
-						<a href="#" class="btn-c btn-c-download">
+						<a href="#" class="btn-c btn-c__download">
 							<i class="fab fa-google-play"></i>
 							<div class="btn-download__text">
 								<small>Download from</small>
@@ -502,7 +502,7 @@
 			</div>
 		</section>
 
-		<!-- Screenshot app-->
+		<!-- Carousel -Screenshot -->
 		<section class="section-block-grey">
 			<div class="container">
 				<div class="row center-head-title">
@@ -517,9 +517,36 @@
 						</div>
 					</div>
 				</div>
+				<!-- Screenshot carousel -->
 				<div class="row">
 					<div class="col-md-12">
-						<img src="./images/screenshot/screenshot.jpg" alt="">
+						<div id="screenshot-carousel" class="owl-carousel screenshot-carousel"> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/01.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/02.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/03.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/04.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/05.jpeg" alt="">
+								</div>
+							</div> 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -618,7 +645,7 @@
 			</div>
 		</section>
 
-		<!-- Statistics - info -->
+		<!-- Statistics -Info -->
 		<section class="section-block-bg">
 			<div class="statistics-info">
 				<div class="container">
@@ -842,7 +869,7 @@
 			</div>
 		</section>
 
-		<!-- Client Feedback Carousel -->
+		<!-- Carousel -Feedback-->
 		<section class="section-block-bg">
 			<div class="container">
 				<div class="row content-side-img">
@@ -857,16 +884,72 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-12 d-flex justify-content-end">
+					<div class="col-md-6 col-12">
 						<!-- Carousel - Owl -->
-						<img style="max-width: 400px;" src="./images/screenshot/screenshot-comment.jpg"
-							alt="client vne commnent">
+						<!-- <img style="max-width: 400px;" src="./images/screenshot/screenshot-comment.jpg"  alt="client vne commnent"> -->
+
+							<div class="owl-carousel feedback-slider" id="feedback-slider">
+								<!-- slider item -->
+								<div class="feedback-slider__item">
+									<div class="feedback-slider__mark">
+										<div class="feedback-slider__avatar">
+											<img src="./images/content-img/team-member-1.png" alt="">
+											<div class="feedback-info">
+												<h4 class="feedback-info__name">John Doe</h4>
+												<h5 class="feedback-info__title">Marketing Head</h5>
+											</div>
+										</div>
+										<i class="fas fa-quote-right"></i>
+									</div>
+									<p>1- Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is
+										a
+										long established fact that a reader will be distracted by the readable its layout.
+									</p>
+									
+								</div>
+								<!-- slider item -->
+								<div class="feedback-slider__item">
+									<div class="feedback-slider__mark">
+										<div class="feedback-slider__avatar">
+											<img src="./images/content-img/team-member-1.png" alt="">
+											<div class="feedback-info">
+												<h4 class="feedback-info__name">John Doe</h4>
+												<h5 class="feedback-info__title">Marketing Head</h5>
+											</div>
+										</div>
+										<i class="fas fa-quote-right"></i>
+									</div>
+									<p>2- Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is
+										a
+										long established fact that a reader will be distracted by the readable its layout.
+									</p>
+									
+								</div>
+								<!-- slider item -->
+								<div class="feedback-slider__item">
+									<div class="feedback-slider__mark">
+										<div class="feedback-slider__avatar">
+											<img src="./images/content-img/team-member-1.png" alt="">
+											<div class="feedback-info">
+												<h4 class="feedback-info__name">John Doe</h4>
+												<h5 class="feedback-info__title">Marketing Head</h5>
+											</div>
+										</div>
+										<i class="fas fa-quote-right"></i>
+									</div>
+									<p>3- Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is
+										a
+										long established fact that a reader will be distracted by the readable its layout.
+									</p>
+									
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- card - members -->
+		<!-- Card -members -->
 		<section class="section-block-grey">
 			<div class="container">
 				<div class="row center-head-title">
@@ -1120,7 +1203,7 @@
 			</div>
 		</section>
 
-		<!-- Customer - carousel -->
+		<!-- Carousel -logo -->
 		<section class="section-block">
 			<div class="container">
 				<div class="row center-head-title">
@@ -1140,7 +1223,7 @@
 					<div class="col-md-12">
 						<!-- carousel -->
 						<div class="carousel-customer">
-							<div class="carousel-wrap">
+							<!-- <div class="carousel-wrap">
 								<div class="owl-carousel">
 									<div class="item"><img src="./images/customer-img/clients-logo-01.png"></div>
 									<div class="item"><img src="./images/customer-img/clients-logo-02.png"></div>
@@ -1150,8 +1233,8 @@
 									<div class="item"><img src="./images/customer-img/clients-logo-06.png"></div>
 									<div class="item"><img src="./images/customer-img/clients-logo-07.png"></div>
 								</div>
-							</div>
-							<!-- <div class="swiper mySwiperCarousel">
+							</div> -->
+							<div class="swiper mySwiperCarousel" id="mySwiperCarousel">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide swiper-slide-client">
 										<img src="./images/customer-img/clients-logo-01.png" alt="client img"
@@ -1182,13 +1265,14 @@
 											class="client-section__img">
 									</div>
 								</div>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			</div>
 		</section>
+
 	</main>
 	
 
